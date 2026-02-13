@@ -1,6 +1,6 @@
 {
   "name": "@alyvro/pulse",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Real-time SSE with custom Alyvro Protocol.",
   "type": "module",
   "exports": {
