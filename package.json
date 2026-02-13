@@ -1,0 +1,60 @@
+{
+  "name": "@alyvro/pulse",
+  "version": "1.0.1",
+  "description": "Real-time SSE with custom Alyvro Protocol.",
+  "type": "module",
+  "exports": {
+    "./client": {
+      "import": "./dist/client/index.js",
+      "types": "./dist/client/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server/index.js",
+      "types": "./dist/server/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run"
+  },
+  "keywords": [
+    "nextjs",
+    "serverless",
+    "realtime"
+  ],
+  "author": {
+    "name": "Alyvro",
+    "url": "https://alyvro.com",
+    "email": "info@alyvro.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alyvro/pulse"
+  },
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.1",
+  "peerDependencies": {
+    "next": "^16.1.6",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^16.3.2",
+    "@types/node": "^20.0.0",
+    "@types/react": "^19.2.14",
+    "jsdom": "^28.0.0",
+    "nanoid": "^5.0.0",
+    "next": "^16.1.6",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  },
+  "dependencies": {
+    "nanoid": "^5.0.0"
+  }
+}
